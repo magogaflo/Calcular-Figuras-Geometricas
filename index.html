@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header-title">Calcular Figuras Geometricas</h1>
+      <h3 class="header-description">
+        Calcular diferentes medidas de figuras Geometricas como area y perimetro
+      </h3>
+    </header>
+    <main class="main-figure">
+      <section class="answer">
+        <h2 class="answer-text"></h2>
+      </section>
+      <section class="box-section">
+        <div class="box">
+          <div class="box-header">
+            <h2>Cuadrado</h2>
+          </div>
+          <div class="box-main">
+            <p class="box-main_text">Cuanto mide lado de tu cuadrado?</p>
+            <div class="box-main_primary">
+              <input
+                class="box-main_input"
+                id="side"
+                type="number"
+                name="side"
+                placeholder="Ingrese lados"
+              />
+              <div class="box-main_btn">
+                <button class="box-main_btn_perimetro" type="button">
+                  Perimetro
+                </button>
+                <button class="box-main_btn_area" type="button">Area</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-header">
+            <h2>Triangulo</h2>
+          </div>
+          <div class="box-main">
+            <p class="box-main_text">Cuanto mide cada lado de tu Triangulo?</p>
+            <div class="box-main_primary">
+              <input
+                class="box-main_input"
+                id="side1"
+                type="number"
+                name="side1"
+                placeholder="Ingrese lado 1"
+              />
+              <input
+                class="box-main_input"
+                id="side2"
+                type="number"
+                name="side2"
+                placeholder="Ingrese lado 2"
+              />
+              <input
+                class="box-main_input"
+                id="side3"
+                type="number"
+                name="side3"
+                placeholder="Ingrese lado 3"
+              />
+              <div class="box-main_btn">
+                <button class="box-main_btn_perimetro" id="perimetro_triangulo" type="button">
+                  Perimetro
+                </button>
+              </div>
+            </div>
+            <p class="box-main_text">Cuanto mide la base y la altura  de tu Triangulo?</p>
+            <div class="box-main_primary">
+              <input
+                class="box-main_input"
+                id="sideBase"
+                type="number"
+                name="side"
+                placeholder="Ingrese la base"
+              />
+              <input
+                class="box-main_input"
+                id="sideAltura"
+                type="number"
+                name="side"
+                placeholder="Ingrese la altura"
+              />
+              <div class="box-main_btn">
+                <button class="box-main_btn_area" id="area_triangulo" type="button">Area</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-header">
+            <h2>Circulo</h2>
+          </div>
+          <div class="box-main">
+            <p class="box-main_text">Cuanto mide el Radio de tu circulo?</p>
+            <div class="box-main_primary">
+              <input
+                class="box-main_input"
+                id="sideCirculo"
+                type="number"
+                name="side"
+                placeholder="Ingrese Radio"
+              />
+              <div class="box-main_btn">
+                <button class="box-main_btn_perimetro" id="perimetro_circulo" type="button">
+                  Perimetro
+                </button>
+                <button class="box-main_btn_area" id="area_circulo" type="button">Area</button>
+                <button class="box-main_btn_diametro" id="diametro_circulo"   type="button">
+                  Diametro
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
